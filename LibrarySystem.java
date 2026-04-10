@@ -1,16 +1,20 @@
-import LibraryManagement.book;
-import LibraryManagement.member;
+import ex5.Book;
+import ex5.Member;
 
 public class LibrarySystem {
+
     public static void main(String[] args) {
 
-        book book = new book("Java Programming", "James Gosling", "12345");
-        member member = new member("Snehal", 101);
+        // Creating Book object
+        Book b1 = new Book("Java Programming", "James Gosling", "12345");
 
-        System.out.println("---- Book Details ----");
-        book.displayBook();
+        // Creating Member object
+        Member m1 = new Member(101, "Snehal");
 
-        System.out.println("\n---- Member Details ----");
-        member.displayMember();
+        System.out.println("----- Book Details -----");
+        b1.displayBook();
+
+        System.out.println("\n----- Member Details -----");
+        m1.displayMember();
     }
 }
